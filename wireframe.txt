@@ -1,0 +1,7 @@
+Heading
+Content
+    Photo
+        title
+        image
+        description
+Footer
