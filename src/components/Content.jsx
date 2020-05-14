@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const ContentStyle = styled.div`
     display: flex;
     justify-content: center;
-
+    min-height: 85vh;
 
     .photo{
         width: 80%;
