@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-// Import Axios
-import axios from 'axios'
+// Dependencies
+import axios from 'axios'// Import Axios
+import styled from 'styled-components' // Import styled-components
 // Import Constants
 import { BASE_URL, API_KEY } from './constants'
 
@@ -24,16 +25,12 @@ function App() {
         console.log(response)
       })
       .catch(error => {
-        debugger
+        setNasaData({hdurl: "", title: "Failed to recieve photo information", explanation: "No Data to show"})
       })
   }, [])
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
       <Heading />
       <Content nasaData={nasaData} />
       <Footer />
